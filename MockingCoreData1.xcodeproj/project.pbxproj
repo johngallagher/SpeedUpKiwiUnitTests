@@ -1,0 +1,690 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		2351206546920B738332EB46 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 23512B8836114AE7441786E0 /* QuartzCore.framework */; };
+		235121A920CECAF05F3E510E /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 2351272606EC4D853A7401BF /* main.m */; };
+		2351233003BBA538D1C9ACEE /* MobileCoreServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2351225D5472D9BF3FB22B75 /* MobileCoreServices.framework */; };
+		235123985ABBDAEFBF69CF9A /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 23512EA0A144079CE5A8A853 /* InfoPlist.strings */; };
+		235124FD2EFAA4F5DDE25C1D /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 23512485DE496D3DC4C69E5D /* UIKit.framework */; };
+		235125040EA2CA93C4A901E7 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 23512EA6D535222CE2EE0487 /* Foundation.framework */; };
+		23512573782DF711EFDFB6BD /* KPCoreDataSpec.m in Sources */ = {isa = PBXBuildFile; fileRef = 2351266B79BA9343F64C5577 /* KPCoreDataSpec.m */; };
+		235126DCDB0C2A7E51D013E3 /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 23512D8DFCED118A3D20B323 /* CoreData.framework */; };
+		23512735951ADC510A664B63 /* _KPTestEntity.m in Sources */ = {isa = PBXBuildFile; fileRef = 2351219EE72AD4CBD7AF45F1 /* _KPTestEntity.m */; };
+		2351279E501B3FED6C4B78F4 /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 23512D8DFCED118A3D20B323 /* CoreData.framework */; };
+		2351281F427BE4D45C19BA16 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 23512FD79169B240AE095D63 /* InfoPlist.strings */; };
+		2351285AE88F49F882E55FE5 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 23512EA6D535222CE2EE0487 /* Foundation.framework */; };
+		23512A2B68605D769D4F1372 /* KPAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 2351241EB060ACEA7EAC47DA /* KPAppDelegate.m */; };
+		23512A50F4651614FDFF2543 /* KPTestEntity.m in Sources */ = {isa = PBXBuildFile; fileRef = 23512408142A8A581C891DDD /* KPTestEntity.m */; };
+		23512AFB6E1A5F35BBA367AF /* MockingCoreData1.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 2351227CF450064497BF8D1F /* MockingCoreData1.xcdatamodeld */; };
+		23512DE1D46D9870CC02384F /* SenTestingKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 235125DC8C3AD5729691DBA4 /* SenTestingKit.framework */; };
+		23512EEC1F59CE1617DB5461 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 23512F980CCD1733A1E23275 /* CoreGraphics.framework */; };
+		23512FFD19A3EDE10BC2D09E /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 23512485DE496D3DC4C69E5D /* UIKit.framework */; };
+		529D770D1630462A0039DDCE /* libKiwi.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 23512016F88742DED56FC0D6 /* libKiwi.a */; };
+		52D7BB3416304AD3003D1427 /* CFNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 52D7BB3316304AD3003D1427 /* CFNetwork.framework */; };
+		52D7BB3616304AE3003D1427 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 52D7BB3516304AE3003D1427 /* SystemConfiguration.framework */; };
+		52D7BB3816304AF2003D1427 /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 52D7BB3716304AF2003D1427 /* Security.framework */; };
+		52D7BB3A16304B57003D1427 /* libxml2.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 52D7BB3916304B57003D1427 /* libxml2.dylib */; };
+		52D7BB5C16304E4C003D1427 /* libRestKit.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 52D7BB2916304AA4003D1427 /* libRestKit.a */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		23512820EE56F3B6F4838B93 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 235128E0F7921EFDD248F873 /* Kiwi.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 235121FC52173160EE4EDD19;
+			remoteInfo = "Kiwi-OSX";
+		};
+		235128A81C328C489CDDC530 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 235128E0F7921EFDD248F873 /* Kiwi.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 23512B10C615CB93FD5A47F0;
+			remoteInfo = KiwiExamples;
+		};
+		235128EBDF6A647F832C35E7 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 235128E0F7921EFDD248F873 /* Kiwi.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 23512A2EA33F0BA8BD3D162C;
+			remoteInfo = KiwiTests;
+		};
+		23512A32243325DC04130444 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 235128E0F7921EFDD248F873 /* Kiwi.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 2351277C3665E2858AE1DF19;
+			remoteInfo = Kiwi;
+		};
+		23512B0CCBD056A59AC7EDC1 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 2351253E78BD8D1A7ECC415D /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 235124A3445464C265688E1C;
+			remoteInfo = MockingCoreData1;
+		};
+		52D7BB2816304AA4003D1427 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 52D7BB1D16304AA4003D1427 /* RestKit.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 25160D1614564E810060A5C5;
+			remoteInfo = RestKit;
+		};
+		52D7BB2A16304AA4003D1427 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 52D7BB1D16304AA4003D1427 /* RestKit.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 25160D2614564E820060A5C5;
+			remoteInfo = RestKitTests;
+		};
+		52D7BB2C16304AA4003D1427 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 52D7BB1D16304AA4003D1427 /* RestKit.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 25160E62145651060060A5C5;
+			remoteInfo = RestKitFramework;
+		};
+		52D7BB2E16304AA4003D1427 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 52D7BB1D16304AA4003D1427 /* RestKit.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 25160E78145651060060A5C5;
+			remoteInfo = RestKitFrameworkTests;
+		};
+		52D7BB3016304AA4003D1427 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 52D7BB1D16304AA4003D1427 /* RestKit.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 259C301615128079003066A2;
+			remoteInfo = RestKitResources;
+		};
+		52D7BB3B16304B99003D1427 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 52D7BB1D16304AA4003D1427 /* RestKit.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = 25160D1514564E810060A5C5;
+			remoteInfo = RestKit;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		2351208B2A6B5662C058E0D4 /* MockingCoreData1-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "MockingCoreData1-Prefix.pch"; sourceTree = "<group>"; };
+		2351209577CCCAC82D79F487 /* MockingCoreData1-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.info; path = "MockingCoreData1-Info.plist"; sourceTree = "<group>"; };
+		2351219EE72AD4CBD7AF45F1 /* _KPTestEntity.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = _KPTestEntity.m; sourceTree = "<group>"; };
+		2351225D5472D9BF3FB22B75 /* MobileCoreServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MobileCoreServices.framework; path = System/Library/Frameworks/MobileCoreServices.framework; sourceTree = SDKROOT; };
+		23512408142A8A581C891DDD /* KPTestEntity.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KPTestEntity.m; sourceTree = "<group>"; };
+		2351241EB060ACEA7EAC47DA /* KPAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = KPAppDelegate.m; sourceTree = "<group>"; };
+		23512485DE496D3DC4C69E5D /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		235125DC8C3AD5729691DBA4 /* SenTestingKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SenTestingKit.framework; path = Library/Frameworks/SenTestingKit.framework; sourceTree = DEVELOPER_DIR; };
+		235125FD9CACD79F8B225019 /* MockingCoreData1.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = MockingCoreData1.xcdatamodel; sourceTree = "<group>"; };
+		2351266B79BA9343F64C5577 /* KPCoreDataSpec.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KPCoreDataSpec.m; sourceTree = "<group>"; };
+		2351272606EC4D853A7401BF /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		235127E739214D0CB82744D9 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		235128E0F7921EFDD248F873 /* Kiwi.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = Kiwi.xcodeproj; path = ThirdParty/Kiwi/Kiwi.xcodeproj; sourceTree = "<group>"; };
+		23512961734C4DC5D6DD56F4 /* MockingCoreData1.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MockingCoreData1.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		23512AFE2B494F726929AEC0 /* _KPTestEntity.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = _KPTestEntity.h; sourceTree = "<group>"; };
+		23512B2D5AC0A4D064A157EF /* MockingCoreData1Tests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.info; path = "MockingCoreData1Tests-Info.plist"; sourceTree = "<group>"; };
+		23512B8836114AE7441786E0 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		23512D6F2E9C57B08ABABCFE /* KPAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = KPAppDelegate.h; sourceTree = "<group>"; };
+		23512D8DFCED118A3D20B323 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
+		23512DA9FA985610E1C71EAF /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		23512E63955FC11C1EB47E56 /* MockingCoreData1Tests.octest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MockingCoreData1Tests.octest; sourceTree = BUILT_PRODUCTS_DIR; };
+		23512EA6D535222CE2EE0487 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		23512EF529134A979103F841 /* KPTestEntity.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KPTestEntity.h; sourceTree = "<group>"; };
+		23512F980CCD1733A1E23275 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		52D7BB1D16304AA4003D1427 /* RestKit.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = RestKit.xcodeproj; path = ThirdParty/Restkit/RestKit.xcodeproj; sourceTree = "<group>"; };
+		52D7BB3316304AD3003D1427 /* CFNetwork.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CFNetwork.framework; path = System/Library/Frameworks/CFNetwork.framework; sourceTree = SDKROOT; };
+		52D7BB3516304AE3003D1427 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
+		52D7BB3716304AF2003D1427 /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
+		52D7BB3916304B57003D1427 /* libxml2.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libxml2.dylib; path = usr/lib/libxml2.dylib; sourceTree = SDKROOT; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		2351203266057A4FBB0925DE /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				529D770D1630462A0039DDCE /* libKiwi.a in Frameworks */,
+				23512DE1D46D9870CC02384F /* SenTestingKit.framework in Frameworks */,
+				2351279E501B3FED6C4B78F4 /* CoreData.framework in Frameworks */,
+				23512FFD19A3EDE10BC2D09E /* UIKit.framework in Frameworks */,
+				235125040EA2CA93C4A901E7 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2351266A472F789455561E80 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				52D7BB5C16304E4C003D1427 /* libRestKit.a in Frameworks */,
+				52D7BB3A16304B57003D1427 /* libxml2.dylib in Frameworks */,
+				52D7BB3816304AF2003D1427 /* Security.framework in Frameworks */,
+				52D7BB3616304AE3003D1427 /* SystemConfiguration.framework in Frameworks */,
+				52D7BB3416304AD3003D1427 /* CFNetwork.framework in Frameworks */,
+				235124FD2EFAA4F5DDE25C1D /* UIKit.framework in Frameworks */,
+				2351285AE88F49F882E55FE5 /* Foundation.framework in Frameworks */,
+				23512EEC1F59CE1617DB5461 /* CoreGraphics.framework in Frameworks */,
+				235126DCDB0C2A7E51D013E3 /* CoreData.framework in Frameworks */,
+				2351233003BBA538D1C9ACEE /* MobileCoreServices.framework in Frameworks */,
+				2351206546920B738332EB46 /* QuartzCore.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		2351207F034E2623F7CDF823 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				23512FD79169B240AE095D63 /* InfoPlist.strings */,
+				23512B2D5AC0A4D064A157EF /* MockingCoreData1Tests-Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		23512176281F9CAB85BEB6B5 /* MockingCoreData1Tests */ = {
+			isa = PBXGroup;
+			children = (
+				2351266B79BA9343F64C5577 /* KPCoreDataSpec.m */,
+				2351207F034E2623F7CDF823 /* Supporting Files */,
+			);
+			path = MockingCoreData1Tests;
+			sourceTree = "<group>";
+		};
+		23512199C3368A62F74BD1C2 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				2351208B2A6B5662C058E0D4 /* MockingCoreData1-Prefix.pch */,
+				2351272606EC4D853A7401BF /* main.m */,
+				23512EA0A144079CE5A8A853 /* InfoPlist.strings */,
+				2351209577CCCAC82D79F487 /* MockingCoreData1-Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		2351223ED042B4C758E00F96 /* MockingCoreData1 */ = {
+			isa = PBXGroup;
+			children = (
+				2351241EB060ACEA7EAC47DA /* KPAppDelegate.m */,
+				23512D6F2E9C57B08ABABCFE /* KPAppDelegate.h */,
+				23512199C3368A62F74BD1C2 /* Supporting Files */,
+				2351227CF450064497BF8D1F /* MockingCoreData1.xcdatamodeld */,
+			);
+			path = MockingCoreData1;
+			sourceTree = "<group>";
+		};
+		23512823A80B8CE67781541F /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				23512016F88742DED56FC0D6 /* libKiwi.a */,
+				235129973102A2A22452D43E /* libKiwi-OSX.a */,
+				23512C9CEDF3A9AD67467F2C /* KiwiTests.octest */,
+				23512A5EA6B8CBEE6C5AF382 /* KiwiExamples.octest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		23512C8C168CA0B7E3AB620E /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				23512961734C4DC5D6DD56F4 /* MockingCoreData1.app */,
+				23512E63955FC11C1EB47E56 /* MockingCoreData1Tests.octest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		23512EFF8C7A12F6274CB128 = {
+			isa = PBXGroup;
+			children = (
+				52D7BB3916304B57003D1427 /* libxml2.dylib */,
+				52D7BB3716304AF2003D1427 /* Security.framework */,
+				52D7BB3516304AE3003D1427 /* SystemConfiguration.framework */,
+				52D7BB3316304AD3003D1427 /* CFNetwork.framework */,
+				235128E0F7921EFDD248F873 /* Kiwi.xcodeproj */,
+				52D7BB1D16304AA4003D1427 /* RestKit.xcodeproj */,
+				23512408142A8A581C891DDD /* KPTestEntity.m */,
+				23512EF529134A979103F841 /* KPTestEntity.h */,
+				2351219EE72AD4CBD7AF45F1 /* _KPTestEntity.m */,
+				23512AFE2B494F726929AEC0 /* _KPTestEntity.h */,
+				23512C8C168CA0B7E3AB620E /* Products */,
+				23512F236B8D131248265F83 /* Frameworks */,
+				2351223ED042B4C758E00F96 /* MockingCoreData1 */,
+				23512176281F9CAB85BEB6B5 /* MockingCoreData1Tests */,
+			);
+			sourceTree = "<group>";
+		};
+		23512F236B8D131248265F83 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				23512B8836114AE7441786E0 /* QuartzCore.framework */,
+				2351225D5472D9BF3FB22B75 /* MobileCoreServices.framework */,
+				235125DC8C3AD5729691DBA4 /* SenTestingKit.framework */,
+				23512D8DFCED118A3D20B323 /* CoreData.framework */,
+				23512F980CCD1733A1E23275 /* CoreGraphics.framework */,
+				23512EA6D535222CE2EE0487 /* Foundation.framework */,
+				23512485DE496D3DC4C69E5D /* UIKit.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		52D7BB1E16304AA4003D1427 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				52D7BB2916304AA4003D1427 /* libRestKit.a */,
+				52D7BB2B16304AA4003D1427 /* RestKitTests.octest */,
+				52D7BB2D16304AA4003D1427 /* RestKit.framework */,
+				52D7BB2F16304AA4003D1427 /* RestKitFrameworkTests.octest */,
+				52D7BB3116304AA4003D1427 /* RestKitResources.bundle */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		235124A3445464C265688E1C /* MockingCoreData1 */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 23512828E766F5F56519B454 /* Build configuration list for PBXNativeTarget "MockingCoreData1" */;
+			buildPhases = (
+				235124EDA9CC1833FE08FBAD /* Sources */,
+				2351266A472F789455561E80 /* Frameworks */,
+				235126153B58B497D68BB27C /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				52D7BB3C16304B99003D1427 /* PBXTargetDependency */,
+			);
+			name = MockingCoreData1;
+			productName = MockingCoreData1;
+			productReference = 23512961734C4DC5D6DD56F4 /* MockingCoreData1.app */;
+			productType = "com.apple.product-type.application";
+		};
+		23512F80CE85328922C36F03 /* MockingCoreData1Tests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 23512A02181B457C645F882F /* Build configuration list for PBXNativeTarget "MockingCoreData1Tests" */;
+			buildPhases = (
+				23512A413F20AED7F6974C11 /* Sources */,
+				2351203266057A4FBB0925DE /* Frameworks */,
+				23512F374670706C0E33E671 /* Resources */,
+				235124EC42C4F6BE21616518 /* ShellScript */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				23512E1594717DAD545B24FC /* PBXTargetDependency */,
+			);
+			name = MockingCoreData1Tests;
+			productName = MockingCoreData1Tests;
+			productReference = 23512E63955FC11C1EB47E56 /* MockingCoreData1Tests.octest */;
+			productType = "com.apple.product-type.bundle";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		2351253E78BD8D1A7ECC415D /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0420;
+			};
+			buildConfigurationList = 2351214907F993B3058DB6E8 /* Build configuration list for PBXProject "MockingCoreData1" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 23512EFF8C7A12F6274CB128;
+			productRefGroup = 23512C8C168CA0B7E3AB620E /* Products */;
+			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = 23512823A80B8CE67781541F /* Products */;
+					ProjectRef = 235128E0F7921EFDD248F873 /* Kiwi.xcodeproj */;
+				},
+				{
+					ProductGroup = 52D7BB1E16304AA4003D1427 /* Products */;
+					ProjectRef = 52D7BB1D16304AA4003D1427 /* RestKit.xcodeproj */;
+				},
+			);
+			projectRoot = "";
+			targets = (
+				235124A3445464C265688E1C /* MockingCoreData1 */,
+				23512F80CE85328922C36F03 /* MockingCoreData1Tests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXReferenceProxy section */
+		23512016F88742DED56FC0D6 /* libKiwi.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libKiwi.a;
+			remoteRef = 23512A32243325DC04130444 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		235129973102A2A22452D43E /* libKiwi-OSX.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = "libKiwi-OSX.a";
+			remoteRef = 23512820EE56F3B6F4838B93 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		23512A5EA6B8CBEE6C5AF382 /* KiwiExamples.octest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = KiwiExamples.octest;
+			remoteRef = 235128A81C328C489CDDC530 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		23512C9CEDF3A9AD67467F2C /* KiwiTests.octest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = KiwiTests.octest;
+			remoteRef = 235128EBDF6A647F832C35E7 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		52D7BB2916304AA4003D1427 /* libRestKit.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libRestKit.a;
+			remoteRef = 52D7BB2816304AA4003D1427 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		52D7BB2B16304AA4003D1427 /* RestKitTests.octest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = RestKitTests.octest;
+			remoteRef = 52D7BB2A16304AA4003D1427 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		52D7BB2D16304AA4003D1427 /* RestKit.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = RestKit.framework;
+			remoteRef = 52D7BB2C16304AA4003D1427 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		52D7BB2F16304AA4003D1427 /* RestKitFrameworkTests.octest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = RestKitFrameworkTests.octest;
+			remoteRef = 52D7BB2E16304AA4003D1427 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		52D7BB3116304AA4003D1427 /* RestKitResources.bundle */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = RestKitResources.bundle;
+			remoteRef = 52D7BB3016304AA4003D1427 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
+
+/* Begin PBXResourcesBuildPhase section */
+		235126153B58B497D68BB27C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				235123985ABBDAEFBF69CF9A /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		23512F374670706C0E33E671 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2351281F427BE4D45C19BA16 /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		235124EC42C4F6BE21616518 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# Run the unit tests in this test bundle.\n\"${SYSTEM_DEVELOPER_DIR}/Tools/RunUnitTests\"\n";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		235124EDA9CC1833FE08FBAD /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				235121A920CECAF05F3E510E /* main.m in Sources */,
+				23512A2B68605D769D4F1372 /* KPAppDelegate.m in Sources */,
+				23512AFB6E1A5F35BBA367AF /* MockingCoreData1.xcdatamodeld in Sources */,
+				23512735951ADC510A664B63 /* _KPTestEntity.m in Sources */,
+				23512A50F4651614FDFF2543 /* KPTestEntity.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		23512A413F20AED7F6974C11 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				23512573782DF711EFDFB6BD /* KPCoreDataSpec.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		23512E1594717DAD545B24FC /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 235124A3445464C265688E1C /* MockingCoreData1 */;
+			targetProxy = 23512B0CCBD056A59AC7EDC1 /* PBXContainerItemProxy */;
+		};
+		52D7BB3C16304B99003D1427 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = RestKit;
+			targetProxy = 52D7BB3B16304B99003D1427 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		23512EA0A144079CE5A8A853 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				235127E739214D0CB82744D9 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		23512FD79169B240AE095D63 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				23512DA9FA985610E1C71EAF /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		235126BCA0E1AD90729087B8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/MockingCoreData1.app/MockingCoreData1";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(DEVELOPER_LIBRARY_DIR)/Frameworks",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "MockingCoreData1/MockingCoreData1-Prefix.pch";
+				INFOPLIST_FILE = "MockingCoreData1Tests/MockingCoreData1Tests-Info.plist";
+				OTHER_LDFLAGS = "-all_load";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_AFTER_BUILD = "NO\n";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				USER_HEADER_SEARCH_PATHS = "\"${PROJECT_DIR}/ThirdParty/Kiwi\"/**";
+				WRAPPER_EXTENSION = octest;
+			};
+			name = Debug;
+		};
+		2351273ED309D1D33CDCB384 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "MockingCoreData1/MockingCoreData1-Prefix.pch";
+				HEADER_SEARCH_PATHS = "\"$(BUILT_PRODUCTS_DIR)/../../Headers\"/**";
+				INFOPLIST_FILE = "MockingCoreData1/MockingCoreData1-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
+				OTHER_LDFLAGS = (
+					"-ObjC",
+					"-all_load",
+				);
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				USER_HEADER_SEARCH_PATHS = "";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		23512AA53BD20979ED7EDA5E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "MockingCoreData1/MockingCoreData1-Prefix.pch";
+				HEADER_SEARCH_PATHS = "\"$(BUILT_PRODUCTS_DIR)/../../Headers\"/**";
+				INFOPLIST_FILE = "MockingCoreData1/MockingCoreData1-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
+				OTHER_LDFLAGS = (
+					"-ObjC",
+					"-all_load",
+				);
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				USER_HEADER_SEARCH_PATHS = "";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		23512B6711EC79AFF31427E6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/MockingCoreData1.app/MockingCoreData1";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(DEVELOPER_LIBRARY_DIR)/Frameworks",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "MockingCoreData1/MockingCoreData1-Prefix.pch";
+				INFOPLIST_FILE = "MockingCoreData1Tests/MockingCoreData1Tests-Info.plist";
+				OTHER_LDFLAGS = "-all_load";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_AFTER_BUILD = "NO\n";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				USER_HEADER_SEARCH_PATHS = "\"${PROJECT_DIR}/ThirdParty/Kiwi\"/**";
+				WRAPPER_EXTENSION = octest;
+			};
+			name = Release;
+		};
+		23512CE3F44E423D7C75D28E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
+				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		23512EBAFF394EB0CE45864C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		2351214907F993B3058DB6E8 /* Build configuration list for PBXProject "MockingCoreData1" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				23512CE3F44E423D7C75D28E /* Release */,
+				23512EBAFF394EB0CE45864C /* Debug */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		23512828E766F5F56519B454 /* Build configuration list for PBXNativeTarget "MockingCoreData1" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2351273ED309D1D33CDCB384 /* Release */,
+				23512AA53BD20979ED7EDA5E /* Debug */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		23512A02181B457C645F882F /* Build configuration list for PBXNativeTarget "MockingCoreData1Tests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				23512B6711EC79AFF31427E6 /* Release */,
+				235126BCA0E1AD90729087B8 /* Debug */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		2351227CF450064497BF8D1F /* MockingCoreData1.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				235125FD9CACD79F8B225019 /* MockingCoreData1.xcdatamodel */,
+			);
+			currentVersion = 235125FD9CACD79F8B225019 /* MockingCoreData1.xcdatamodel */;
+			path = MockingCoreData1.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = 2351253E78BD8D1A7ECC415D /* Project object */;
+}

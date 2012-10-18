@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<model name="" userDefinedModelVersionIdentifier="" type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="872" systemVersion="10K549" minimumToolsVersion="Automatic" macOSVersion="Automatic" iOSVersion="Automatic">
+    <entity name="KPTestEntity" representedClassName="KPTestEntity" syncable="YES">
+        <attribute name="property01" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="property02" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="property03" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="property04" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="property05" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="property06" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="property07" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="property08" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="property09" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="property010" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="property011" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="property012" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="property013" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="property014" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="property015" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="property016" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="property017" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="property018" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="property019" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="property020" optional="YES" attributeType="String" syncable="YES"/>
+    </entity>
+    <elements>
+        <element name="KPTestEntity" positionX="160" positionY="192" width="128" height="345"/>
+    </elements>
+</model>
