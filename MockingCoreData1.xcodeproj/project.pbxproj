@@ -11,7 +11,7 @@
 		2351206546920B738332EB46 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 23512B8836114AE7441786E0 /* QuartzCore.framework */; };
 		235120D3C7F7B2C1321C36DA /* KPApplicationStatus.m in Sources */ = {isa = PBXBuildFile; fileRef = 23512242FFFD6E02D206FEDF /* KPApplicationStatus.m */; };
 		235121A920CECAF05F3E510E /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 2351272606EC4D853A7401BF /* main.m */; };
-		2351224ABE5C5EDEA9B8B403 /* KPSyncBarSpec.m in Sources */ = {isa = PBXBuildFile; fileRef = 23512D777BA7E8F038AFE01A /* KPSyncBarSpec.m */; };
+		2351224ABE5C5EDEA9B8B403 /* KPSyncTextGeneratorSpec.m in Sources */ = {isa = PBXBuildFile; fileRef = 23512D777BA7E8F038AFE01A /* KPSyncTextGeneratorSpec.m */; };
 		235122A312DAEF15C7C2CCD7 /* BarViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 235125C6851FD61AA1E88FC7 /* BarViewController.m */; };
 		2351233003BBA538D1C9ACEE /* MobileCoreServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2351225D5472D9BF3FB22B75 /* MobileCoreServices.framework */; };
 		235123985ABBDAEFBF69CF9A /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 23512EA0A144079CE5A8A853 /* InfoPlist.strings */; };
@@ -151,7 +151,7 @@
 		23512C7F726C1CFAA289486F /* BarView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BarView.m; sourceTree = "<group>"; };
 		23512D4A304B7D306976EB42 /* BarView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BarView.h; sourceTree = "<group>"; };
 		23512D6F2E9C57B08ABABCFE /* KPAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = KPAppDelegate.h; sourceTree = "<group>"; };
-		23512D777BA7E8F038AFE01A /* KPSyncBarSpec.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KPSyncBarSpec.m; sourceTree = "<group>"; };
+		23512D777BA7E8F038AFE01A /* KPSyncTextGeneratorSpec.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KPSyncTextGeneratorSpec.m; sourceTree = "<group>"; };
 		23512D8DFCED118A3D20B323 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
 		23512DA9FA985610E1C71EAF /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		23512E3C87EEA3CA966789E5 /* KPApplicationStatus.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KPApplicationStatus.h; sourceTree = "<group>"; };
@@ -240,7 +240,7 @@
 				235125BBBF545596DA128673 /* KPSyncTextGenerator.m */,
 				23512E3C87EEA3CA966789E5 /* KPApplicationStatus.h */,
 				23512242FFFD6E02D206FEDF /* KPApplicationStatus.m */,
-				23512D777BA7E8F038AFE01A /* KPSyncBarSpec.m */,
+				23512D777BA7E8F038AFE01A /* KPSyncTextGeneratorSpec.m */,
 				23512D4A304B7D306976EB42 /* BarView.h */,
 				23512C7F726C1CFAA289486F /* BarView.m */,
 				2351299CDB17FC64A28138F5 /* Application.xib */,
@@ -531,7 +531,7 @@
 			files = (
 				23512573782DF711EFDFB6BD /* KPCoreDataSpec.m in Sources */,
 				2351283BEF45FE1D1DCC3342 /* KPDummyManagedObject.m in Sources */,
-				2351224ABE5C5EDEA9B8B403 /* KPSyncBarSpec.m in Sources */,
+				2351224ABE5C5EDEA9B8B403 /* KPSyncTextGeneratorSpec.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

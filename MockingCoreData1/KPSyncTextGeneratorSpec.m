@@ -2,7 +2,7 @@
 #import "KPApplicationStatus.h"
 #import "KPSyncTextGenerator.h"
 
-SPEC_BEGIN(KPSyncBarSpec)
+SPEC_BEGIN(KPSyncTextGeneratorSpec)
 
     /*
 
@@ -21,19 +21,20 @@ SPEC_BEGIN(KPSyncBarSpec)
             context(@"last sync time now", ^{
                 beforeEach(^{
                     today = [NSDate date];
-                    status = [KPApplicationStatus statusWithLastSyncTime:today];
+                    status = [KPApplicationStatus status];
+                    [status setLastSyncTime:today];
                 });
                 context(@"sync status stopped", ^{
                     beforeEach(^{
-
+                        [status setSyncStatus:KPSyncStatusStopped];
                     });
                     context(@"load more status not loading", ^{
                         beforeEach(^{
-
+                            [status setLoadMoreStatus:KPLoadMoreStatusNotLoading];
                         });
-                        context(@"Connection status online", ^{
+                        context(@"Online status online", ^{
                             beforeEach(^{
-
+                                [status setConnectionStatus:KPConnectionStatusOnline];
                             });
                             it(@"should show last sync time", ^{
                                 KPSyncTextGenerator *generator = [KPSyncTextGenerator generatorWithStatus:status];
