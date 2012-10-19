@@ -24,7 +24,7 @@ SPEC_BEGIN(KPSyncTextGeneratorSpec)
                     status = [KPApplicationStatus status];
                     [status setLastSyncTime:today];
                 });
-                context(@"sync status stopped", ^{
+                context(@"when not syncing", ^{
                     beforeEach(^{
                         [status setSyncStatus:KPSyncStatusStopped];
                     });
@@ -59,9 +59,60 @@ SPEC_BEGIN(KPSyncTextGeneratorSpec)
                             beforeEach(^{
                                 [status setConnectionStatus:KPConnectionStatusOnline];
                             });
-                            it(@"should show last sync time", ^{
+                            it(@"should show loading more", ^{
                                 KPSyncTextGenerator *generator = [KPSyncTextGenerator generatorWithStatus:status];
                                 [[[generator generate] should] equal:kSyncBarLoadingMoreText];
+                            });
+                        });
+                        context(@"offline", ^{
+                            beforeEach(^{
+                                [status setConnectionStatus:KPConnectionStatusOffline];
+                            });
+                            it(@"should show offline message", ^{
+                                KPSyncTextGenerator *generator = [KPSyncTextGenerator generatorWithStatus:status];
+                                [[[generator generate] should] equal:kSyncBarOfflineText];
+                            });
+                        });
+                    });
+                });
+                context(@"when syncing", ^{
+                    beforeEach(^{
+                        [status setSyncStatus:KPSyncStatusStarted];
+                    });
+                    context(@"when not loading more", ^{
+                        beforeEach(^{
+                            [status setLoadMoreStatus:KPLoadMoreStatusNotLoading];
+                        });
+                        context(@"online", ^{
+                            beforeEach(^{
+                                [status setConnectionStatus:KPConnectionStatusOnline];
+                            });
+                            it(@"should show syncing message", ^{
+                                KPSyncTextGenerator *generator = [KPSyncTextGenerator generatorWithStatus:status];
+                                [[[generator generate] should] equal:kSyncBarSyncingText];
+                            });
+                        });
+                        context(@"offline", ^{
+                            beforeEach(^{
+                                [status setConnectionStatus:KPConnectionStatusOffline];
+                            });
+                            it(@"should show offline message", ^{
+                                KPSyncTextGenerator *generator = [KPSyncTextGenerator generatorWithStatus:status];
+                                [[[generator generate] should] equal:kSyncBarOfflineText];
+                            });
+                        });
+                    });
+                    context(@"when loading more", ^{
+                        beforeEach(^{
+                            [status setLoadMoreStatus:KPLoadMoreStatusLoading];
+                        });
+                        context(@"online", ^{
+                            beforeEach(^{
+                                [status setConnectionStatus:KPConnectionStatusOnline];
+                            });
+                            it(@"should show syncing message", ^{
+                                KPSyncTextGenerator *generator = [KPSyncTextGenerator generatorWithStatus:status];
+                                [[[generator generate] should] equal:kSyncBarSyncingText];
                             });
                         });
                         context(@"offline", ^{

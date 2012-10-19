@@ -22,6 +22,9 @@
     if ([_status connectionStatus] == KPConnectionStatusOffline)
         return kSyncBarOfflineText;
 
+    if ([_status syncStatus] == KPSyncStatusStarted)
+        return kSyncBarSyncingText;
+
     if ([_status loadMoreStatus] == KPLoadMoreStatusLoading)
         return kSyncBarLoadingMoreText;
 
