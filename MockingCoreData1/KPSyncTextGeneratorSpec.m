@@ -28,11 +28,11 @@ SPEC_BEGIN(KPSyncTextGeneratorSpec)
                     beforeEach(^{
                         [status setSyncStatus:KPSyncStatusStopped];
                     });
-                    context(@"load more status not loading", ^{
+                    context(@"when not loading more", ^{
                         beforeEach(^{
                             [status setLoadMoreStatus:KPLoadMoreStatusNotLoading];
                         });
-                        context(@"Online status online", ^{
+                        context(@"online", ^{
                             beforeEach(^{
                                 [status setConnectionStatus:KPConnectionStatusOnline];
                             });
@@ -41,7 +41,30 @@ SPEC_BEGIN(KPSyncTextGeneratorSpec)
                                 [[[generator generate] should] equal:@"Last sync: Just now"];
                             });
                         });
-                        context(@"Connection status offline", ^{
+                        context(@"offline", ^{
+                            beforeEach(^{
+                                [status setConnectionStatus:KPConnectionStatusOffline];
+                            });
+                            it(@"should show offline message", ^{
+                                KPSyncTextGenerator *generator = [KPSyncTextGenerator generatorWithStatus:status];
+                                [[[generator generate] should] equal:kSyncBarOfflineText];
+                            });
+                        });
+                    });
+                    context(@"when loading more", ^{
+                        beforeEach(^{
+                            [status setLoadMoreStatus:KPLoadMoreStatusLoading];
+                        });
+                        context(@"online", ^{
+                            beforeEach(^{
+                                [status setConnectionStatus:KPConnectionStatusOnline];
+                            });
+                            it(@"should show last sync time", ^{
+                                KPSyncTextGenerator *generator = [KPSyncTextGenerator generatorWithStatus:status];
+                                [[[generator generate] should] equal:kSyncBarLoadingMoreText];
+                            });
+                        });
+                        context(@"offline", ^{
                             beforeEach(^{
                                 [status setConnectionStatus:KPConnectionStatusOffline];
                             });

@@ -22,6 +22,9 @@
     if ([_status connectionStatus] == KPConnectionStatusOffline)
         return kSyncBarOfflineText;
 
+    if ([_status loadMoreStatus] == KPLoadMoreStatusLoading)
+        return kSyncBarLoadingMoreText;
+
     return @"Last sync: Just now";
 }
 
