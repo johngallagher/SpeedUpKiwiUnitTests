@@ -19,6 +19,9 @@
 
 #pragma mark Public
 -(NSString *)generate {
+    if ([_status connectionStatus] == KPConnectionStatusOffline)
+        return kSyncBarOfflineText;
+
     return @"Last sync: Just now";
 }
 

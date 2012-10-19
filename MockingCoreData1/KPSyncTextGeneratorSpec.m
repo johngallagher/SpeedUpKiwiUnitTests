@@ -41,6 +41,15 @@ SPEC_BEGIN(KPSyncTextGeneratorSpec)
                                 [[[generator generate] should] equal:@"Last sync: Just now"];
                             });
                         });
+                        context(@"Connection status offline", ^{
+                            beforeEach(^{
+                                [status setConnectionStatus:KPConnectionStatusOffline];
+                            });
+                            it(@"should show offline message", ^{
+                                KPSyncTextGenerator *generator = [KPSyncTextGenerator generatorWithStatus:status];
+                                [[[generator generate] should] equal:kSyncBarOfflineText];
+                            });
+                        });
                     });
                 });
             });
