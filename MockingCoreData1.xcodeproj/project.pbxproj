@@ -7,8 +7,12 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		23512061ACA757EC4E8067D3 /* KPDummyManagedObject.m in Sources */ = {isa = PBXBuildFile; fileRef = 2351290B5028CAD1218455EF /* KPDummyManagedObject.m */; };
 		2351206546920B738332EB46 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 23512B8836114AE7441786E0 /* QuartzCore.framework */; };
+		235120D3C7F7B2C1321C36DA /* KPApplicationStatus.m in Sources */ = {isa = PBXBuildFile; fileRef = 23512242FFFD6E02D206FEDF /* KPApplicationStatus.m */; };
 		235121A920CECAF05F3E510E /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 2351272606EC4D853A7401BF /* main.m */; };
+		2351224ABE5C5EDEA9B8B403 /* KPSyncBarSpec.m in Sources */ = {isa = PBXBuildFile; fileRef = 23512D777BA7E8F038AFE01A /* KPSyncBarSpec.m */; };
+		235122A312DAEF15C7C2CCD7 /* BarViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 235125C6851FD61AA1E88FC7 /* BarViewController.m */; };
 		2351233003BBA538D1C9ACEE /* MobileCoreServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2351225D5472D9BF3FB22B75 /* MobileCoreServices.framework */; };
 		235123985ABBDAEFBF69CF9A /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 23512EA0A144079CE5A8A853 /* InfoPlist.strings */; };
 		235124FD2EFAA4F5DDE25C1D /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 23512485DE496D3DC4C69E5D /* UIKit.framework */; };
@@ -18,14 +22,19 @@
 		23512735951ADC510A664B63 /* _KPTestEntity.m in Sources */ = {isa = PBXBuildFile; fileRef = 2351219EE72AD4CBD7AF45F1 /* _KPTestEntity.m */; };
 		2351279E501B3FED6C4B78F4 /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 23512D8DFCED118A3D20B323 /* CoreData.framework */; };
 		2351281F427BE4D45C19BA16 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 23512FD79169B240AE095D63 /* InfoPlist.strings */; };
+		2351283BEF45FE1D1DCC3342 /* KPDummyManagedObject.m in Sources */ = {isa = PBXBuildFile; fileRef = 2351290B5028CAD1218455EF /* KPDummyManagedObject.m */; };
 		2351285AE88F49F882E55FE5 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 23512EA6D535222CE2EE0487 /* Foundation.framework */; };
 		23512A2B68605D769D4F1372 /* KPAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 2351241EB060ACEA7EAC47DA /* KPAppDelegate.m */; };
 		23512A50F4651614FDFF2543 /* KPTestEntity.m in Sources */ = {isa = PBXBuildFile; fileRef = 23512408142A8A581C891DDD /* KPTestEntity.m */; };
 		23512AFB6E1A5F35BBA367AF /* MockingCoreData1.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 2351227CF450064497BF8D1F /* MockingCoreData1.xcdatamodeld */; };
+		23512B7E7A1ECD54EA76756A /* BarView.m in Sources */ = {isa = PBXBuildFile; fileRef = 23512C7F726C1CFAA289486F /* BarView.m */; };
 		23512DE1D46D9870CC02384F /* SenTestingKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 235125DC8C3AD5729691DBA4 /* SenTestingKit.framework */; };
+		23512E520DD6F1F3B307314A /* KPSyncTextGenerator.m in Sources */ = {isa = PBXBuildFile; fileRef = 235125BBBF545596DA128673 /* KPSyncTextGenerator.m */; };
 		23512EEC1F59CE1617DB5461 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 23512F980CCD1733A1E23275 /* CoreGraphics.framework */; };
+		23512F053CC10FE971D9BB76 /* Application.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2351299CDB17FC64A28138F5 /* Application.xib */; };
 		23512FFD19A3EDE10BC2D09E /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 23512485DE496D3DC4C69E5D /* UIKit.framework */; };
 		529D770D1630462A0039DDCE /* libKiwi.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 23512016F88742DED56FC0D6 /* libKiwi.a */; };
+		52A695D816306DB900B1F183 /* libobjc.A.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 52A695D716306DB900B1F183 /* libobjc.A.dylib */; };
 		52D7BB3416304AD3003D1427 /* CFNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 52D7BB3316304AD3003D1427 /* CFNetwork.framework */; };
 		52D7BB3616304AE3003D1427 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 52D7BB3516304AE3003D1427 /* SystemConfiguration.framework */; };
 		52D7BB3816304AF2003D1427 /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 52D7BB3716304AF2003D1427 /* Security.framework */; };
@@ -116,28 +125,41 @@
 /* Begin PBXFileReference section */
 		2351208B2A6B5662C058E0D4 /* MockingCoreData1-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "MockingCoreData1-Prefix.pch"; sourceTree = "<group>"; };
 		2351209577CCCAC82D79F487 /* MockingCoreData1-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.info; path = "MockingCoreData1-Info.plist"; sourceTree = "<group>"; };
+		235120BCE7DFDA58C0BC5899 /* KPDummyManagedObject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KPDummyManagedObject.h; sourceTree = "<group>"; };
 		2351219EE72AD4CBD7AF45F1 /* _KPTestEntity.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = _KPTestEntity.m; sourceTree = "<group>"; };
+		23512242FFFD6E02D206FEDF /* KPApplicationStatus.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KPApplicationStatus.m; sourceTree = "<group>"; };
 		2351225D5472D9BF3FB22B75 /* MobileCoreServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MobileCoreServices.framework; path = System/Library/Frameworks/MobileCoreServices.framework; sourceTree = SDKROOT; };
+		235122954CC164CD02AD64B0 /* BarViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = BarViewController.h; path = UIViewController/BarViewController.h; sourceTree = "<group>"; };
 		23512408142A8A581C891DDD /* KPTestEntity.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KPTestEntity.m; sourceTree = "<group>"; };
 		2351241EB060ACEA7EAC47DA /* KPAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = KPAppDelegate.m; sourceTree = "<group>"; };
 		23512485DE496D3DC4C69E5D /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		235125BBBF545596DA128673 /* KPSyncTextGenerator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KPSyncTextGenerator.m; sourceTree = "<group>"; };
+		235125C6851FD61AA1E88FC7 /* BarViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = BarViewController.m; path = UIViewController/BarViewController.m; sourceTree = "<group>"; };
 		235125DC8C3AD5729691DBA4 /* SenTestingKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SenTestingKit.framework; path = Library/Frameworks/SenTestingKit.framework; sourceTree = DEVELOPER_DIR; };
 		235125FD9CACD79F8B225019 /* MockingCoreData1.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = MockingCoreData1.xcdatamodel; sourceTree = "<group>"; };
 		2351266B79BA9343F64C5577 /* KPCoreDataSpec.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KPCoreDataSpec.m; sourceTree = "<group>"; };
 		2351272606EC4D853A7401BF /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		235127E739214D0CB82744D9 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		235127F3B04D695AD80E1469 /* KPSyncTextGenerator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KPSyncTextGenerator.h; sourceTree = "<group>"; };
 		235128E0F7921EFDD248F873 /* Kiwi.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = Kiwi.xcodeproj; path = ThirdParty/Kiwi/Kiwi.xcodeproj; sourceTree = "<group>"; };
+		2351290B5028CAD1218455EF /* KPDummyManagedObject.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KPDummyManagedObject.m; sourceTree = "<group>"; };
 		23512961734C4DC5D6DD56F4 /* MockingCoreData1.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MockingCoreData1.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		2351299CDB17FC64A28138F5 /* Application.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = Application.xib; sourceTree = "<group>"; };
 		23512AFE2B494F726929AEC0 /* _KPTestEntity.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = _KPTestEntity.h; sourceTree = "<group>"; };
 		23512B2D5AC0A4D064A157EF /* MockingCoreData1Tests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.info; path = "MockingCoreData1Tests-Info.plist"; sourceTree = "<group>"; };
 		23512B8836114AE7441786E0 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		23512C7F726C1CFAA289486F /* BarView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BarView.m; sourceTree = "<group>"; };
+		23512D4A304B7D306976EB42 /* BarView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BarView.h; sourceTree = "<group>"; };
 		23512D6F2E9C57B08ABABCFE /* KPAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = KPAppDelegate.h; sourceTree = "<group>"; };
+		23512D777BA7E8F038AFE01A /* KPSyncBarSpec.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KPSyncBarSpec.m; sourceTree = "<group>"; };
 		23512D8DFCED118A3D20B323 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
 		23512DA9FA985610E1C71EAF /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		23512E3C87EEA3CA966789E5 /* KPApplicationStatus.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KPApplicationStatus.h; sourceTree = "<group>"; };
 		23512E63955FC11C1EB47E56 /* MockingCoreData1Tests.octest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MockingCoreData1Tests.octest; sourceTree = BUILT_PRODUCTS_DIR; };
 		23512EA6D535222CE2EE0487 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		23512EF529134A979103F841 /* KPTestEntity.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KPTestEntity.h; sourceTree = "<group>"; };
 		23512F980CCD1733A1E23275 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		52A695D716306DB900B1F183 /* libobjc.A.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libobjc.A.dylib; path = usr/lib/libobjc.A.dylib; sourceTree = SDKROOT; };
 		52D7BB1D16304AA4003D1427 /* RestKit.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = RestKit.xcodeproj; path = ThirdParty/Restkit/RestKit.xcodeproj; sourceTree = "<group>"; };
 		52D7BB3316304AD3003D1427 /* CFNetwork.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CFNetwork.framework; path = System/Library/Frameworks/CFNetwork.framework; sourceTree = SDKROOT; };
 		52D7BB3516304AE3003D1427 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
@@ -150,6 +172,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				52A695D816306DB900B1F183 /* libobjc.A.dylib in Frameworks */,
 				529D770D1630462A0039DDCE /* libKiwi.a in Frameworks */,
 				23512DE1D46D9870CC02384F /* SenTestingKit.framework in Frameworks */,
 				2351279E501B3FED6C4B78F4 /* CoreData.framework in Frameworks */,
@@ -191,6 +214,8 @@
 		23512176281F9CAB85BEB6B5 /* MockingCoreData1Tests */ = {
 			isa = PBXGroup;
 			children = (
+				235120BCE7DFDA58C0BC5899 /* KPDummyManagedObject.h */,
+				2351290B5028CAD1218455EF /* KPDummyManagedObject.m */,
 				2351266B79BA9343F64C5577 /* KPCoreDataSpec.m */,
 				2351207F034E2623F7CDF823 /* Supporting Files */,
 			);
@@ -211,6 +236,14 @@
 		2351223ED042B4C758E00F96 /* MockingCoreData1 */ = {
 			isa = PBXGroup;
 			children = (
+				235127F3B04D695AD80E1469 /* KPSyncTextGenerator.h */,
+				235125BBBF545596DA128673 /* KPSyncTextGenerator.m */,
+				23512E3C87EEA3CA966789E5 /* KPApplicationStatus.h */,
+				23512242FFFD6E02D206FEDF /* KPApplicationStatus.m */,
+				23512D777BA7E8F038AFE01A /* KPSyncBarSpec.m */,
+				23512D4A304B7D306976EB42 /* BarView.h */,
+				23512C7F726C1CFAA289486F /* BarView.m */,
+				2351299CDB17FC64A28138F5 /* Application.xib */,
 				2351241EB060ACEA7EAC47DA /* KPAppDelegate.m */,
 				23512D6F2E9C57B08ABABCFE /* KPAppDelegate.h */,
 				23512199C3368A62F74BD1C2 /* Supporting Files */,
@@ -230,6 +263,13 @@
 			name = Products;
 			sourceTree = "<group>";
 		};
+		23512C56C6366254665F703C /* UIViewController */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = UIViewController;
+			sourceTree = "<group>";
+		};
 		23512C8C168CA0B7E3AB620E /* Products */ = {
 			isa = PBXGroup;
 			children = (
@@ -242,6 +282,9 @@
 		23512EFF8C7A12F6274CB128 = {
 			isa = PBXGroup;
 			children = (
+				235125C6851FD61AA1E88FC7 /* BarViewController.m */,
+				235122954CC164CD02AD64B0 /* BarViewController.h */,
+				52A695D716306DB900B1F183 /* libobjc.A.dylib */,
 				52D7BB3916304B57003D1427 /* libxml2.dylib */,
 				52D7BB3716304AF2003D1427 /* Security.framework */,
 				52D7BB3516304AE3003D1427 /* SystemConfiguration.framework */,
@@ -256,6 +299,7 @@
 				23512F236B8D131248265F83 /* Frameworks */,
 				2351223ED042B4C758E00F96 /* MockingCoreData1 */,
 				23512176281F9CAB85BEB6B5 /* MockingCoreData1Tests */,
+				23512C56C6366254665F703C /* UIViewController */,
 			);
 			sourceTree = "<group>";
 		};
@@ -433,6 +477,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				235123985ABBDAEFBF69CF9A /* InfoPlist.strings in Resources */,
+				23512F053CC10FE971D9BB76 /* Application.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -472,6 +517,11 @@
 				23512AFB6E1A5F35BBA367AF /* MockingCoreData1.xcdatamodeld in Sources */,
 				23512735951ADC510A664B63 /* _KPTestEntity.m in Sources */,
 				23512A50F4651614FDFF2543 /* KPTestEntity.m in Sources */,
+				23512061ACA757EC4E8067D3 /* KPDummyManagedObject.m in Sources */,
+				23512B7E7A1ECD54EA76756A /* BarView.m in Sources */,
+				235122A312DAEF15C7C2CCD7 /* BarViewController.m in Sources */,
+				235120D3C7F7B2C1321C36DA /* KPApplicationStatus.m in Sources */,
+				23512E520DD6F1F3B307314A /* KPSyncTextGenerator.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -480,6 +530,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				23512573782DF711EFDFB6BD /* KPCoreDataSpec.m in Sources */,
+				2351283BEF45FE1D1DCC3342 /* KPDummyManagedObject.m in Sources */,
+				2351224ABE5C5EDEA9B8B403 /* KPSyncBarSpec.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -532,8 +584,7 @@
 				INFOPLIST_FILE = "MockingCoreData1Tests/MockingCoreData1Tests-Info.plist";
 				OTHER_LDFLAGS = "-all_load";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_AFTER_BUILD = "NO
-";
+				TEST_AFTER_BUILD = "NO\n";
 				TEST_HOST = "$(BUNDLE_LOADER)";
 				USER_HEADER_SEARCH_PATHS = "\"${PROJECT_DIR}/ThirdParty/Kiwi\"/**";
 				WRAPPER_EXTENSION = octest;
@@ -592,8 +643,7 @@
 				INFOPLIST_FILE = "MockingCoreData1Tests/MockingCoreData1Tests-Info.plist";
 				OTHER_LDFLAGS = "-all_load";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_AFTER_BUILD = "NO
-";
+				TEST_AFTER_BUILD = "NO\n";
 				TEST_HOST = "$(BUNDLE_LOADER)";
 				USER_HEADER_SEARCH_PATHS = "\"${PROJECT_DIR}/ThirdParty/Kiwi\"/**";
 				WRAPPER_EXTENSION = octest;

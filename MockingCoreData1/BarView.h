@@ -1,0 +1,3 @@
+@interface BarView : UILabel
+
+@end

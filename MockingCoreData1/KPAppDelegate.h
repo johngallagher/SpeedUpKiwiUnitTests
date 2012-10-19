@@ -8,9 +8,11 @@
 
 #import <UIKit/UIKit.h>
 
-@interface KPAppDelegate : UIResponder <UIApplicationDelegate>
+@interface KPAppDelegate : UIResponder <UIApplicationDelegate> {
+    IBOutlet UIWindow *_window;
+}
 
-@property (strong, nonatomic) UIWindow *window;
+@property (strong, nonatomic) IBOutlet UIWindow *window;
 
 @property (readonly, strong, nonatomic) NSManagedObjectContext *managedObjectContext;
 @property (readonly, strong, nonatomic) NSManagedObjectModel *managedObjectModel;

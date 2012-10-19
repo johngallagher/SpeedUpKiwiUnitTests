@@ -12,6 +12,7 @@ describe(@"KPCoreDataSpec", ^{
                 [thisObject deleteEntity];
             }
             [[NSManagedObjectContext contextForCurrentThread] reset];
+
         });
         context(@"with setProperty010", ^{
             beforeEach(^{
