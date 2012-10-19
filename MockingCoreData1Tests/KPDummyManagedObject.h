@@ -1,3 +1,3 @@
-@interface KPDummyManagedObject : NSManagedObject
+@interface KPDummyManagedObject : NSObject
 
 @end

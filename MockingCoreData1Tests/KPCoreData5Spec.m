@@ -2,9 +2,8 @@
 #import "Kiwi.h"
 #import "KPTestEntity.h"
 #import "KPDummyManagedObject.h"
-#import "RKManagedObjectStore+KPUtilities.h"
 
-SPEC_BEGIN(KPCoreDataSpec)
+SPEC_BEGIN(KPCoreData5Spec)
 
 describe(@"KPCoreDataSpec", ^{
     __block KPTestEntity *entity;
@@ -15,11 +14,6 @@ describe(@"KPCoreDataSpec", ^{
                 [thisObject deleteEntity];
             }
             [[NSManagedObjectContext contextForCurrentThread] reset];
-
-//            Swap out the real nsmanagedobject for a dummy one
-//            Method method1 = class_getInstanceMethod([NSManagedObject class], @selector(initWithEntity:insertIntoManagedObjectContext:));
-//            Method method2 = class_getInstanceMethod([KPDummyManagedObject class], @selector(initWithEntity:insertIntoManagedObjectContext:));
-//            method_exchangeImplementations(method1, method2);
         });
         context(@"with setProperty010", ^{
             beforeEach(^{

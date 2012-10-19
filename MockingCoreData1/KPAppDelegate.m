@@ -7,6 +7,7 @@
 //
 
 #import "KPAppDelegate.h"
+#import "KPManagedObjectStore.h"
 #import <Restkit/RestKit.h>
 
 @implementation KPAppDelegate
@@ -21,7 +22,7 @@
 {
     [self.window makeKeyAndVisible];
 
-    RKManagedObjectStore *store = [RKManagedObjectStore objectStoreWithStoreFilename:@"Store"];
+    RKManagedObjectStore *store = [KPManagedObjectStore objectStoreWithStoreFilename:@"Store"];
     [RKManagedObjectStore setDefaultObjectStore:store];
     
     return YES;

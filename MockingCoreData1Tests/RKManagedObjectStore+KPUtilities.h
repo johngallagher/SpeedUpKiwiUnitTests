@@ -1,0 +1,3 @@
+@interface RKManagedObjectStore (KPUtilities)
+
+@end

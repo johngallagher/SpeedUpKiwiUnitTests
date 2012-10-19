@@ -31,7 +31,4 @@
     return @"Last sync: Just now";
 }
 
-#pragma mark Private
-
-
 @end
