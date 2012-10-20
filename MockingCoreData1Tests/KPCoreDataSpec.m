@@ -1,8 +1,5 @@
-#import <objc/runtime.h>
 #import "Kiwi.h"
 #import "KPTestEntity.h"
-#import "KPDummyManagedObject.h"
-#import "RKManagedObjectStore+KPUtilities.h"
 
 SPEC_BEGIN(KPCoreDataSpec)
 
@@ -15,39 +12,44 @@ describe(@"KPCoreDataSpec", ^{
                 [thisObject deleteEntity];
             }
             [[NSManagedObjectContext contextForCurrentThread] reset];
-
-//            Swap out the real nsmanagedobject for a dummy one
-//            Method method1 = class_getInstanceMethod([NSManagedObject class], @selector(initWithEntity:insertIntoManagedObjectContext:));
-//            Method method2 = class_getInstanceMethod([KPDummyManagedObject class], @selector(initWithEntity:insertIntoManagedObjectContext:));
-//            method_exchangeImplementations(method1, method2);
         });
         context(@"with setProperty010", ^{
             beforeEach(^{
+                NSLog(@"A");
                 entity = [KPTestEntity object];
                 [entity setProperty010:@"setProperty010"];
+                NSLog(@"B");
             });
             it(@"should have the property", ^{
+                NSLog(@"1");
                 [[[entity property010] should] equal:@"setProperty010"];
             });
             it(@"should have the correct contactenated string", ^{
+                NSLog(@"1");
                 [[[entity concatenatedString] should] equal:@"setProperty010"];
             });
             it(@"should be the only entity in the managed object context", ^{
+                NSLog(@"1");
                 [[[KPTestEntity allObjects] should] haveCountOf:1];
             });
         });
         context(@"with setProperty09", ^{
             beforeEach(^{
+                NSLog(@"C");
                 entity = [KPTestEntity object];
                 [entity setProperty09:@"setProperty09"];
+                NSLog(@"Då");
             });
             it(@"should have the property", ^{
+                NSLog(@"1");
                 [[[entity property09] should] equal:@"setProperty09"];
             });
             it(@"should have the correct contactenated string", ^{
+                NSLog(@"1");
                 [[[entity concatenatedString] should] equal:@"setProperty09"];
             });
             it(@"should be the only entity in the managed object context", ^{
+                NSLog(@"1");
                 [[[KPTestEntity allObjects] should] haveCountOf:1];
             });
         });

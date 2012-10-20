@@ -1,22 +1,22 @@
 #import "Kiwi.h"
-#import "KPTestEntity.h"
+#import "KPTestEntityNSObject.h"
 
 SPEC_BEGIN(KPCoreData2Spec)
 
-describe(@"KPCoreDataSpec", ^{
-    __block KPTestEntity *entity;
+describe(@"KPCoreData2Spec", ^{
+    __block KPTestEntityNSObject *entity;
     describe(@"#", ^{
-        beforeEach(^{
-            NSArray *allObjects = [KPTestEntity allObjects];
-            for (KPTestEntity *thisObject in allObjects) {
-                [thisObject deleteEntity];
-            }
-            [[NSManagedObjectContext contextForCurrentThread] reset];
-
-        });
+//        beforeEach(^{
+//            NSArray *allObjects = [KPTestEntityNSObject allObjects];
+//            for (KPTestEntityNSObject *thisObject in allObjects) {
+//                [thisObject deleteEntity];
+//            }
+//            [[NSManagedObjectContext contextForCurrentThread] reset];
+//
+//        });
         context(@"with setProperty010", ^{
             beforeEach(^{
-                entity = [KPTestEntity object];
+                entity = [KPTestEntityNSObject object];
                 [entity setProperty010:@"setProperty010"];
             });
             it(@"should have the property", ^{
@@ -26,12 +26,12 @@ describe(@"KPCoreDataSpec", ^{
                 [[[entity concatenatedString] should] equal:@"setProperty010"];
             });
             it(@"should be the only entity in the managed object context", ^{
-                [[[KPTestEntity allObjects] should] haveCountOf:1];
+                [[[KPTestEntityNSObject allObjects] should] haveCountOf:1];
             });
         });
         context(@"with setProperty09", ^{
             beforeEach(^{
-                entity = [KPTestEntity object];
+                entity = [KPTestEntityNSObject object];
                 [entity setProperty09:@"setProperty09"];
             });
             it(@"should have the property", ^{
@@ -41,12 +41,12 @@ describe(@"KPCoreDataSpec", ^{
                 [[[entity concatenatedString] should] equal:@"setProperty09"];
             });
             it(@"should be the only entity in the managed object context", ^{
-                [[[KPTestEntity allObjects] should] haveCountOf:1];
+                [[[KPTestEntityNSObject allObjects] should] haveCountOf:1];
             });
         });
         context(@"with setProperty08", ^{
             beforeEach(^{
-                entity = [KPTestEntity object];
+                entity = [KPTestEntityNSObject object];
                 [entity setProperty08:@"setProperty08"];
             });
             it(@"should have the property", ^{
@@ -56,12 +56,12 @@ describe(@"KPCoreDataSpec", ^{
                 [[[entity concatenatedString] should] equal:@"setProperty08"];
             });
             it(@"should be the only entity in the managed object context", ^{
-                [[[KPTestEntity allObjects] should] haveCountOf:1];
+                [[[KPTestEntityNSObject allObjects] should] haveCountOf:1];
             });
         });
         context(@"with setProperty07", ^{
             beforeEach(^{
-                entity = [KPTestEntity object];
+                entity = [KPTestEntityNSObject object];
                 [entity setProperty07:@"setProperty07"];
             });
             it(@"should have the property", ^{
@@ -71,12 +71,12 @@ describe(@"KPCoreDataSpec", ^{
                 [[[entity concatenatedString] should] equal:@"setProperty07"];
             });
             it(@"should be the only entity in the managed object context", ^{
-                [[[KPTestEntity allObjects] should] haveCountOf:1];
+                [[[KPTestEntityNSObject allObjects] should] haveCountOf:1];
             });
         });
         context(@"with setProperty06", ^{
             beforeEach(^{
-                entity = [KPTestEntity object];
+                entity = [KPTestEntityNSObject object];
                 [entity setProperty06:@"setProperty06"];
             });
             it(@"should have the property", ^{
@@ -86,12 +86,12 @@ describe(@"KPCoreDataSpec", ^{
                 [[[entity concatenatedString] should] equal:@"setProperty06"];
             });
             it(@"should be the only entity in the managed object context", ^{
-                [[[KPTestEntity allObjects] should] haveCountOf:1];
+                [[[KPTestEntityNSObject allObjects] should] haveCountOf:1];
             });
         });
         context(@"with setProperty05", ^{
             beforeEach(^{
-                entity = [KPTestEntity object];
+                entity = [KPTestEntityNSObject object];
                 [entity setProperty05:@"setProperty05"];
             });
             it(@"should have the property", ^{
@@ -101,12 +101,12 @@ describe(@"KPCoreDataSpec", ^{
                 [[[entity concatenatedString] should] equal:@"setProperty05"];
             });
             it(@"should be the only entity in the managed object context", ^{
-                [[[KPTestEntity allObjects] should] haveCountOf:1];
+                [[[KPTestEntityNSObject allObjects] should] haveCountOf:1];
             });
         });
         context(@"with setProperty04", ^{
             beforeEach(^{
-                entity = [KPTestEntity object];
+                entity = [KPTestEntityNSObject object];
                 [entity setProperty04:@"setProperty04"];
             });
             it(@"should have the property", ^{
@@ -116,12 +116,12 @@ describe(@"KPCoreDataSpec", ^{
                 [[[entity concatenatedString] should] equal:@"setProperty04"];
             });
             it(@"should be the only entity in the managed object context", ^{
-                [[[KPTestEntity allObjects] should] haveCountOf:1];
+                [[[KPTestEntityNSObject allObjects] should] haveCountOf:1];
             });
         });
         context(@"with setProperty03", ^{
             beforeEach(^{
-                entity = [KPTestEntity object];
+                entity = [KPTestEntityNSObject object];
                 [entity setProperty03:@"setProperty03"];
             });
             it(@"should have the property", ^{
@@ -131,12 +131,12 @@ describe(@"KPCoreDataSpec", ^{
                 [[[entity concatenatedString] should] equal:@"setProperty03"];
             });
             it(@"should be the only entity in the managed object context", ^{
-                [[[KPTestEntity allObjects] should] haveCountOf:1];
+                [[[KPTestEntityNSObject allObjects] should] haveCountOf:1];
             });
         });
         context(@"with setProperty02", ^{
             beforeEach(^{
-                entity = [KPTestEntity object];
+                entity = [KPTestEntityNSObject object];
                 [entity setProperty02:@"setProperty02"];
             });
             it(@"should have the property", ^{
@@ -146,7 +146,7 @@ describe(@"KPCoreDataSpec", ^{
                 [[[entity concatenatedString] should] equal:@"setProperty02"];
             });
             it(@"should be the only entity in the managed object context", ^{
-                [[[KPTestEntity allObjects] should] haveCountOf:1];
+                [[[KPTestEntityNSObject allObjects] should] haveCountOf:1];
             });
         });
     });
