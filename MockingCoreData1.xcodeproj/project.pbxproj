@@ -149,6 +149,7 @@
 		235125C6851FD61AA1E88FC7 /* BarViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = BarViewController.m; path = UIViewController/BarViewController.m; sourceTree = "<group>"; };
 		235125DC8C3AD5729691DBA4 /* SenTestingKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SenTestingKit.framework; path = Library/Frameworks/SenTestingKit.framework; sourceTree = DEVELOPER_DIR; };
 		235125FD9CACD79F8B225019 /* MockingCoreData1.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = MockingCoreData1.xcdatamodel; sourceTree = "<group>"; };
+		2351264E56F089A77B49E968 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = file.md; path = README.md; sourceTree = "<group>"; };
 		2351266B79BA9343F64C5577 /* KPCoreDataSpec.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KPCoreDataSpec.m; sourceTree = "<group>"; };
 		235126F503C05627C16CF5A8 /* KPSyncTextGeneratorTestCase.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KPSyncTextGeneratorTestCase.h; sourceTree = "<group>"; };
 		2351270AA9DA77703AE9A708 /* RKManagedObjectStore+KPUtilities.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "RKManagedObjectStore+KPUtilities.m"; sourceTree = "<group>"; };
@@ -333,6 +334,7 @@
 				2351223ED042B4C758E00F96 /* MockingCoreData1 */,
 				23512176281F9CAB85BEB6B5 /* MockingCoreData1Tests */,
 				23512C56C6366254665F703C /* UIViewController */,
+				2351264E56F089A77B49E968 /* README.md */,
 			);
 			sourceTree = "<group>";
 		};
