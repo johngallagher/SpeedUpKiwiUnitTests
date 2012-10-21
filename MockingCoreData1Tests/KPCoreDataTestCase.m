@@ -13,9 +13,7 @@
     }
     [[NSManagedObjectContext contextForCurrentThread] reset];
 
-    NSLog(@"A");
     entity = [KPTestEntity object];
-    NSLog(@"B");
 }
 
 -(void)itShouldHaveCorrectProperty10 {

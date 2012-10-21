@@ -6,114 +6,85 @@
 
 -(void)setUp {
     [super setUp];
-    status = [KPApplicationStatus status];
+    status    = [KPApplicationStatus status];
     generator = [KPSyncTextGenerator generatorWithStatus:status];
 }
 
--(void)whenOnline {
+/*
+  Logic Table
+| connection                | loading                    | sync                | result                   | camel                  |
+| KPConnectionStatusOnline  | KPLoadMoreStatusNotLoading | KPSyncStatusStopped | @\"Last sync: Just now\" | LastSyncJustNow        |
+| KPConnectionStatusOffline | KPLoadMoreStatusNotLoading | KPSyncStatusStopped | kSyncBarOfflineText      | SyncBarOfflineText     |
+| KPConnectionStatusOnline  | KPLoadMoreStatusLoading    | KPSyncStatusStopped | kSyncBarLoadingMoreText  | SyncBarLoadingMoreText |
+| KPConnectionStatusOffline | KPLoadMoreStatusLoading    | KPSyncStatusStopped | kSyncBarOfflineText      | SyncBarOfflineText     |
+| KPConnectionStatusOnline  | KPLoadMoreStatusNotLoading | KPSyncStatusStarted | kSyncBarSyncingText      | SyncBarSyncingText     |
+| KPConnectionStatusOffline | KPLoadMoreStatusNotLoading | KPSyncStatusStarted | kSyncBarOfflineText      | SyncBarOfflineText     |
+| KPConnectionStatusOnline  | KPLoadMoreStatusLoading    | KPSyncStatusStarted | kSyncBarSyncingText      | SyncBarSyncingText     |
+| KPConnectionStatusOffline | KPLoadMoreStatusLoading    | KPSyncStatusStarted | kSyncBarOfflineText      | SyncBarOfflineText     |
+
+  Test Template
+-(void)itShouldBe$RESULT_CAMEL$Given$CONNECTION$$STATUS$$LOADING$ {
+    [status setConnectionStatus:$CONNECTION$];
+    [status setSyncStatus:$STATUS$];
+    [status setLoadMoreStatus:$LOADING$];
+    [[[generator generate] should] equal:$RESULT$];
+}
+ */
+
+-(void)itShouldBeLastSyncJustNowGivenKPConnectionStatusOnlineKPSyncStatusStoppedKPLoadMoreStatusNotLoading {
     [status setConnectionStatus:KPConnectionStatusOnline];
-}
--(void)whenOffline {
-    [status setConnectionStatus:KPConnectionStatusOffline];
-}
-
--(void)whenNotLoading {
-    [status setLoadMoreStatus:KPLoadMoreStatusNotLoading];
-}
--(void)whenLoading {
-    [status setLoadMoreStatus:KPLoadMoreStatusLoading];
-}
-
--(void)whenSyncStopped {
     [status setSyncStatus:KPSyncStatusStopped];
-}
--(void)whenSyncStarted {
-    [status setSyncStatus:KPSyncStatusStarted];
-}
-
--(void)itShouldShowLastSyncTimeWhenDefault {
+    [status setLoadMoreStatus:KPLoadMoreStatusNotLoading];
     [[[generator generate] should] equal:@"Last sync: Just now"];
 }
 
--(void)itShouldShowOfflineMessageWhenOfflineSyncStoppedNotLoading {
-    [self whenOffline];
-    [self whenSyncStopped];
-    [self whenNotLoading];
+-(void)itShouldBeSyncBarOfflineTextGivenKPConnectionStatusOfflineKPSyncStatusStoppedKPLoadMoreStatusNotLoading {
+    [status setConnectionStatus:KPConnectionStatusOffline];
+    [status setSyncStatus:KPSyncStatusStopped];
+    [status setLoadMoreStatus:KPLoadMoreStatusNotLoading];
     [[[generator generate] should] equal:kSyncBarOfflineText];
 }
 
--(void)itShouldShowLoadingMore {
-    [self whenOffline];
-    [self whenSyncStopped];
-    [self whenLoading];
+-(void)itShouldBeSyncBarLoadingMoreTextGivenKPConnectionStatusOnlineKPSyncStatusStoppedKPLoadMoreStatusLoading {
+    [status setConnectionStatus:KPConnectionStatusOnline];
+    [status setSyncStatus:KPSyncStatusStopped];
+    [status setLoadMoreStatus:KPLoadMoreStatusLoading];
     [[[generator generate] should] equal:kSyncBarLoadingMoreText];
 }
 
--(void)itShouldShowSyncingMessage {
-    [self whenOffline];
-    [self whenSyncStarted];
-    [self whenLoading];
-    [[[generator generate] should] equal:kSyncBarSyncingText];
-}
--(void)itShouldShowOfflineMessageWhenOffline2 {
-    [self whenOffline];
-    [self whenSyncStopped];
-    [self whenNotLoading];
+-(void)itShouldBeSyncBarOfflineTextGivenKPConnectionStatusOfflineKPSyncStatusStoppedKPLoadMoreStatusLoading {
+    [status setConnectionStatus:KPConnectionStatusOffline];
+    [status setSyncStatus:KPSyncStatusStopped];
+    [status setLoadMoreStatus:KPLoadMoreStatusLoading];
     [[[generator generate] should] equal:kSyncBarOfflineText];
 }
 
--(void)itShouldShowLoadingMore2 {
-    [self whenOffline];
-    [self whenSyncStopped];
-    [self whenLoading];
-    [[[generator generate] should] equal:kSyncBarLoadingMoreText];
-}
-
--(void)itShouldShowSyncingMessage2 {
-    [self whenOffline];
-    [self whenLoading];
-    [self whenSyncStarted];
+-(void)itShouldBeSyncBarSyncingTextGivenKPConnectionStatusOnlineKPSyncStatusStartedKPLoadMoreStatusNotLoading {
+    [status setConnectionStatus:KPConnectionStatusOnline];
+    [status setSyncStatus:KPSyncStatusStarted];
+    [status setLoadMoreStatus:KPLoadMoreStatusNotLoading];
     [[[generator generate] should] equal:kSyncBarSyncingText];
 }
--(void)itShouldShowOfflineMessageWhenOffline3 {
-    [self whenOffline];
-    [self whenSyncStopped];
-    [self whenNotLoading];
+
+-(void)itShouldBeSyncBarOfflineTextGivenKPConnectionStatusOfflineKPSyncStatusStartedKPLoadMoreStatusNotLoading {
+    [status setConnectionStatus:KPConnectionStatusOffline];
+    [status setSyncStatus:KPSyncStatusStarted];
+    [status setLoadMoreStatus:KPLoadMoreStatusNotLoading];
     [[[generator generate] should] equal:kSyncBarOfflineText];
 }
 
--(void)itShouldShowLoadingMore3 {
-    [self whenOffline];
-    [self whenSyncStopped];
-    [self whenLoading];
-    [[[generator generate] should] equal:kSyncBarLoadingMoreText];
-}
-
--(void)itShouldShowSyncingMessage3 {
-    [self whenOffline];
-    [self whenLoading];
-    [self whenSyncStarted];
+-(void)itShouldBeSyncBarSyncingTextGivenKPConnectionStatusOnlineKPSyncStatusStartedKPLoadMoreStatusLoading {
+    [status setConnectionStatus:KPConnectionStatusOnline];
+    [status setSyncStatus:KPSyncStatusStarted];
+    [status setLoadMoreStatus:KPLoadMoreStatusLoading];
     [[[generator generate] should] equal:kSyncBarSyncingText];
 }
--(void)itShouldShowOfflineMessageWhenOffline4 {
-    [self whenOffline];
-    [self whenSyncStopped];
-    [self whenNotLoading];
+
+-(void)itShouldBeSyncBarOfflineTextGivenKPConnectionStatusOfflineKPSyncStatusStartedKPLoadMoreStatusLoading {
+    [status setConnectionStatus:KPConnectionStatusOffline];
+    [status setSyncStatus:KPSyncStatusStarted];
+    [status setLoadMoreStatus:KPLoadMoreStatusLoading];
     [[[generator generate] should] equal:kSyncBarOfflineText];
-}
-
--(void)itShouldShowLoadingMore4 {
-    [self whenOffline];
-    [self whenSyncStopped];
-    [self whenLoading];
-    [[[generator generate] should] equal:kSyncBarLoadingMoreText];
-}
-
--(void)itShouldShowSyncingMessage4 {
-    [self whenOffline];
-    [self whenLoading];
-    [self whenSyncStarted];
-    [[[generator generate] should] equal:kSyncBarSyncingText];
 }
 
 @end
